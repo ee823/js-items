@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist | When Banking meets Minimalist</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">特色</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">操作</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">推荐</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >开设账户</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          当
+          <!-- green highlight effect -->
+          <span class="highlight">银行业务</span>遇见<br />
+          <span class="highlight">极简主义</span>
+        </h1>
+        <h4>更简便的银行体验，更简单的生活。</h4>
+        <button class="btn--text btn--scroll-to">了解更多 &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section section--hidden" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">特色</h2>
+        <h3 class="section__header">融合现代银行的所有优点。</h3>
+      </div>
+
+      <div class="features">
+        <!-- src和data-src都是img标签的属性，src属性用于指定要显示的图像的URL。data-src属性用于惰性加载。当页面加载时，浏览器会加载带有占位符图像的img标记，占位符图像的url在src属性中指定。只有当用户滚动到该图像，才会加载data-src属性指定的实际图像，从而提高页面加载性能 -->
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <!-- svg标签：SVG是可伸缩矢量图形的缩写，用于创建矢量图形，可缩放到任意大小而不会失真。它的use属性可以引用另一个SVG文件定义的形状元素 -->
+            <!--  -->
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100%数字银行</h5>
+          <p>
+            100%数字银行是一种通过互联网和移动设备提供全面金融服务的银行业务模式。它的服务流程完全在线上进行，提供24小时全天候服务，客户可以通过电子渠道进行开户、存款、贷款、转账、支付等常见的银行业务，而无需到实体银行网点办理。
+          </p>
+        </div>
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">欣赏你的财富成长。</h5>
+          <p>
+            专注于投资，我们提供多种投资产品，以便您能够更好地管理和增长您的财富。我们致力于帮助您实现财务自由和成功，让您的财富获得更多增长，让您的投资更加有价值。欢迎您来到我们的投资板块，让我们一起开启成功的投资之旅吧！
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">附赠免费借记卡</h5>
+          <p>
+            该产品还附赠免费借记卡，让您的使用更加方便，不用再额外支付费用。借记卡可以让您随时随地查看账户余额，进行转账和取款等操作。无论是在日常生活还是出差旅行中，借记卡都是必不可少的金融工具之一。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--hidden" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">操作</h2>
+        <h3 class="section__header">简单至极，但亦不失优雅</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>即时转账
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>即时贷款
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>即时关闭
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">“一键转账，零手续费，简单高效。”</h5>
+          <p>
+            在我们的银行网页中，我们提供了方便快捷的一键转账功能，而且零手续费！您只需要轻松点击一下按钮，就可以将资金转移到其他用户的帐户中。这项服务简单高效，可让您更快地完成转账。
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">“随时可申请买房或实现梦想的贷款”</h5>
+          <p>我们提供随时可申请的贷款，帮助您实现购房和梦想的计划。</p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            “不再需要您的账户？没问题！立即关闭。”
+          </h5>
+          <p>
+            通过我们的专业团队，我们致力于为用户提供最佳的服务体验。我们的服务旨在让您的生活更加轻松和愉悦。请随时与我们联系，我们的客服团队将为您提供及时的帮助和支持。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--hidden" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">还在犹豫吗?</h2>
+        <h3 class="section__header">数百万银行家已经开始简化他们的生活！</h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">有史以来最好的财务决策！</h5>
+            <blockquote class="testimonial__text">
+              越来越多的银行家意识到，对于个人和企业而言，良好的财务决策是获得财务自由和成功的关键。随着技术的发展和金融服务的创新，现在我们有更多的工具和资源来帮助我们管理我们的财务，使我们的生活更加简单和轻松。
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav·林恩</h6>
+              <p class="testimonial__location">美国旧金山</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">追求完全简约生活方式的最后一步</h5>
+            <blockquote class="testimonial__text">
+              当我们通过投资理财，积累足够的财富，我们就可以拥有更多的自由和选择。我们可以减少繁琐的工作时间，更多地享受生活。我们可以购买更少但更高质量的物品，减少浪费和冗余。我们可以学习更多有关财务知识和投资，使我们更加自信和独立。这是一个简约的生活方式，因为我们通过理财，可以更好地管理自己的财务状况，减少不必要的开支和债务。这样，我们可以更加自由地选择自己想要的生活方式，实现更加简约和满足的生活。
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">米亚·迈尔斯</h6>
+              <p class="testimonial__location">英国伦敦</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">终于摆脱了老派银行的束缚</h5>
+            <blockquote class="testimonial__text">
+              人们对于新型金融服务的渴望。现代的金融服务不仅需要提供有竞争力的利率和收益，还需要更加简洁、便捷、安全的服务方式，以满足人们日益增长的理财需求。因此，越来越多的人选择放弃传统的银行服务，转而选择使用互联网银行、移动支付等新型金融服务，以实现更加自由、便捷的金融生活。
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">弗朗西斯科·戈麦斯本</h6>
+              <p class="testimonial__location">葡萄牙里斯</p>
+            </address>
+          </div>
+        </div>
+        <!--
+        <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div>
+        -->
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--hidden section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          加入Bankist最好的一天是一年前，其次是今天！
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">开启你的免费账户!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a href="#" class="footer__link">关于</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">定价</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">使用条款</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">隐私策略</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">职业</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">博客</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">联系我们</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; 版权归
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+          >Jonas Schmedtmann</a
+        >所有。本人主要用于学习
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        开设你的账户<br />
+        在 <span class="highlight">5分钟</span>内
+      </h2>
+      <form class="modal__form">
+        <label>姓氏</label>
+        <input type="text" />
+        <label>名字</label>
+        <input type="text" />
+        <label>邮箱地址</label>
+        <input type="email" />
+        <button class="btn">下一步 &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
